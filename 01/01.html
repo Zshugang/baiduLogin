@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度登录</title>
+    <link rel="shortcut icon" href="https://www.baidu.com//favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../reset.min.css">
+    <style>
+        .container {
+            position: relative;
+            width: 100%;
+            height: 688px;
+            background: url(./imgs/01.jpg);
+        }
+
+        .nav {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 500;
+            width: 650px;
+            height: 32px;
+            /* background-color: rosybrown; */
+        }
+
+        .nav .navList {
+            float: right;
+            width: 100%;
+            height: 100%;
+            font-size: 13px;
+            text-align: right;
+            color: rgb(255, 255, 255);
+        }
+
+        .nav .navList .item {
+            font-weight: 700;
+            height: 32px;
+            line-height: 32px;
+            margin-left: 19px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .nav .navList .item:nth-child(9) {
+            background-color: #398bfb;
+            width: 86px;
+            text-align: center;
+        }
+
+        .head_wrapper {
+            /* position: relative; */
+            width: 1000px;
+            height: 293px;
+            /* background-color: rgba(255, 255, 25, .5); */
+            margin: 0 auto;
+        }
+
+        .head_wrapper .head_wrapper_center {
+            position: relative;
+            width: 642px;
+            height: 180px;
+            margin: 0 auto;
+            /* background-color: royalblue; */
+            /* opacity: .5; */
+        }
+
+        .head_wrapper .head_wrapper_center img {
+            position: absolute;
+            top: 90px;
+            left: 321px;
+            transform: translate(-135px, -64.5px);
+            width: 270px;
+            height: 129px;
+        }
+
+        .fm {
+            z-index: 1;
+            width: 642px;
+            height: 40px;
+            background-color: rgba(25, 58, 85, .5);
+            margin: 0 auto;
+            font-size: 0;
+        }
+
+        .fm .leftspan {
+            position: relative;
+            display: inline-block;
+            width: 538px;
+            height: 40px;
+            zoom: 1;
+            margin-top: 0;
+            overflow:auto;
+            /* background-color: #000103; */
+            /* opacity: .4; */
+        }
+
+        .fm .btn_box {
+            display: inline-block;
+            width: 104px;
+            height: 40px;
+            /* overflow: hidden; */
+            
+        }
+
+        .fm .leftspan .phone_img {
+            z-index: 1;
+            position: absolute;
+            right: 11px;
+            top: 20px;
+            /* margn-top引发的传递问题 */
+            margin-top: -8px;
+            height: 16px;
+            width: 18px;
+            background: #fff url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_5606e8f.png) no-repeat;
+        }
+
+        .fm .leftspan .btn_inp {
+            width: 100%;
+            height: 40px;
+            border: 0;
+        }
+        .fm .btn_box .btn_submit{
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            border: 0;
+            font-size: 16px;
+            line-height: 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 导航条 -->
+        <div class="nav">
+            <ul class="navList clearfix">
+                <li class="item">新闻</li>
+                <li class="item">hao123</li>
+                <li class="item">地图</li>
+                <li class="item">视频</li>
+                <li class="item">贴吧</li>
+                <li class="item">学术</li>
+                <li class="item">登录</li>
+                <li class="item">设置</li>
+                <li class="item">更多产品</li>
+            </ul>
+        </div>
+        <!-- 百度logo-->
+        <div class="head_wrapper">
+            <div class="head_wrapper_center">
+                <img src="./imgs/dong_f6764cd1911fae7d460b25e31c7e342c.gif" alt="">
+            </div>
+            <form action="/s" class="fm" onsubmit="javascript:F.call('ps/sug','pssubmit');">
+                <span class="leftspan">
+                    <span class="phone_img"></span>
+                    <input type="text" class="btn_inp">
+                </span>
+                <span class="btn_box">
+                    <input type="submit" value="百度一下" class="btn_submit">
+                </span>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
